@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-wrapper {}
+
+/* Gives us thes red background for the feature section */
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+/* Alert */
+
+/* To remove the padding from the edges */
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.alert-warning {
+    z-index: 1;
+}
+
+/* To remove the rounded edges */
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
+
+.callout-container {
+    height: 100vh;
+    /* Entire height of the browser window. Changes depending what height our browser is set to */
+    background: url("../images/whisky-barrels.jpg") no-repeat bottom right fixed;
+    /* Our image */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+}
+
+/* Darkens the background image slightly */
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); /* a is the transparency 1 is visible, 0 is transparent */
+    
+}
+
+.quotes-container {}
+
+.features-container {}
+
+/* Page headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+/*h2 is each of the headers */
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+/* Block divider */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+.block-divider--black {
+    background-color: #000;
+    width: 35px;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+/* Content containers */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* override Bootstraps default navbar class by switching off the bottom margin */
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1; /* To make sure its not behind any other content */
+}
+
+/* To remove the border around the mobile drop down list button */
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+/* For our logo text */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Parent container for the navigation part and a links. Changes our nav text */
+.navbar .navbar-nav a {
+   font-weight: bold; 
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    /* Overides the default bootstrap class of jumbotron by setting the background color to transparent, removing the grey background. */
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #a7a7a7;
+
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px; /* To curve the edges slightly */
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+    
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+}
+
+/* Table */
+.element-style {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Feature text centered */
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+/*  To make our button match */
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+}
